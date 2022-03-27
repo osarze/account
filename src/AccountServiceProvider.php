@@ -33,6 +33,10 @@ class AccountServiceProvider extends ServiceProvider
      */
     public function register()
     {
+        $this->app->bind('laravel_account', function($app) {
+            return new Account();
+        });
+
         $this->mergeConfigFrom(
             __DIR__.'./../config/account.php',
             'account',
