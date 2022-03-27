@@ -27,12 +27,8 @@
         }
     },
     "minimum-stability": "dev",
-    "require": {
-        "nunomaduro/larastan": "1.x-dev",
-        "illuminate/config": "8.x-dev"
-    },
     "require-dev": {
         "orchestra/testbench": "^5.0|^6.0",
-        "phpunit/phpunit": "9.5.x-dev"
+        "phpunit/phpunit": "^8.0|^9.0"
     }
 }
