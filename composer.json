@@ -1,0 +1,38 @@
+{
+    "name": "osarze/account",
+    "description": "A basics package for all account related actions",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Osarze\\Account\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Osarze\\Account\\Tests\\": "tests"
+        }
+    },
+    "authors": [
+        {
+            "name": "Emmanuel Okhamafe",
+            "email": "osas006@yahoo.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Osarze\\Account\\AccountServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {
+        "nunomaduro/larastan": "1.x-dev",
+        "illuminate/config": "8.x-dev"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^5.0|^6.0",
+        "phpunit/phpunit": "9.5.x-dev"
+    }
+}
